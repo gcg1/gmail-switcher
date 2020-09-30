@@ -1,29 +1,16 @@
 {
-  "name": "Prime Ratings: IMDb Ratings on Prime Video",
-  "version": "0.0.1.5",
-  "description": "See IMDb ratings for shows on Amazon Prime Video.",
+  "name": "Gmail Switcher: quickly switch between inboxes",
+  "version": "0.0.0.1",
+  "description": "Switch between primary and secondary Gmail account inboxes with the SHIFT + BACKSLASH keyboard shortcut.",
   "manifest_version": 2,
-  "content_security_policy": "script-src 'self' https://cdn.firebase.com https://*.firebaseio.com; object-src 'self'",
   "icons": { "128": "icon128.png" },
   "browser_action": {
     "default_icon": "icon128.png"
   },
   "content_scripts": [
     {
-      "matches": [
-        "https://*.primevideo.com/*",
-        "https://*.amazon.co.uk/*",
-        "https://*.amazon.com/*",
-        "https://*.amazon.ca/*",
-        "https://*.amazon.com.au/*"
-      ],
-      "css": ["styles.css"],
-      "js": [
-        "firebase-app.js",
-        "firebase-firestore.js",
-        "db.js",
-        "background.js"
-      ]
+      "matches": ["https://mail.google.com/*"],
+      "js": ["background.js"]
     }
   ]
 }
