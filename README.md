@@ -1,3 +1,3 @@
-# Prime Ratings
+# Gmail Switcher
 
-Simple Chrome Extension to switch between primary and secondary Gmail account inboxes with a keyboard shortcut.
+Simple Chrome Extension to switch between primary and secondary Gmail account inboxes via keyboard shortcut.
